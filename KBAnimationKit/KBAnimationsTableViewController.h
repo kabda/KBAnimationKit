@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KBAnimationsTableViewController.h
 //  KBAnimationKit
 //
 //  Created by 樊远东 on 4/22/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface KBAnimationsTableViewController : UITableViewController
 
 @end
-

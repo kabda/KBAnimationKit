@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		9009BC2A1CCA008E0033EBEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009BC291CCA008E0033EBEB /* main.m */; };
 		9009BC2D1CCA008E0033EBEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009BC2C1CCA008E0033EBEB /* AppDelegate.m */; };
-		9009BC301CCA008E0033EBEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009BC2F1CCA008E0033EBEB /* ViewController.m */; };
-		9009BC331CCA008E0033EBEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9009BC311CCA008E0033EBEB /* Main.storyboard */; };
 		9009BC351CCA008E0033EBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9009BC341CCA008E0033EBEB /* Assets.xcassets */; };
 		9009BC381CCA008E0033EBEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9009BC361CCA008E0033EBEB /* LaunchScreen.storyboard */; };
+		9009BC421CCA01760033EBEB /* UIView+KB_Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009BC411CCA01760033EBEB /* UIView+KB_Animation.m */; };
+		9009BC451CCA02FF0033EBEB /* KBAnimationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009BC441CCA02FF0033EBEB /* KBAnimationsTableViewController.m */; };
+		9099A58A1CCA24EC00BB6E01 /* KBTestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9099A5891CCA24EC00BB6E01 /* KBTestAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,15 @@
 		9009BC291CCA008E0033EBEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9009BC2B1CCA008E0033EBEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9009BC2C1CCA008E0033EBEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9009BC2E1CCA008E0033EBEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9009BC2F1CCA008E0033EBEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9009BC321CCA008E0033EBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9009BC341CCA008E0033EBEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9009BC371CCA008E0033EBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9009BC391CCA008E0033EBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9009BC401CCA01760033EBEB /* UIView+KB_Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KB_Animation.h"; sourceTree = "<group>"; };
+		9009BC411CCA01760033EBEB /* UIView+KB_Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KB_Animation.m"; sourceTree = "<group>"; };
+		9009BC431CCA02FF0033EBEB /* KBAnimationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBAnimationsTableViewController.h; sourceTree = "<group>"; };
+		9009BC441CCA02FF0033EBEB /* KBAnimationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBAnimationsTableViewController.m; sourceTree = "<group>"; };
+		9099A5881CCA24EC00BB6E01 /* KBTestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTestAnimationViewController.h; sourceTree = "<group>"; };
+		9099A5891CCA24EC00BB6E01 /* KBTestAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTestAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		9009BC1C1CCA008E0033EBEB = {
 			isa = PBXGroup;
 			children = (
+				9009BC3F1CCA014D0033EBEB /* Classes */,
 				9009BC271CCA008E0033EBEB /* KBAnimationKit */,
 				9009BC261CCA008E0033EBEB /* Products */,
 			);
@@ -60,9 +65,10 @@
 			children = (
 				9009BC2B1CCA008E0033EBEB /* AppDelegate.h */,
 				9009BC2C1CCA008E0033EBEB /* AppDelegate.m */,
-				9009BC2E1CCA008E0033EBEB /* ViewController.h */,
-				9009BC2F1CCA008E0033EBEB /* ViewController.m */,
-				9009BC311CCA008E0033EBEB /* Main.storyboard */,
+				9009BC431CCA02FF0033EBEB /* KBAnimationsTableViewController.h */,
+				9009BC441CCA02FF0033EBEB /* KBAnimationsTableViewController.m */,
+				9099A5881CCA24EC00BB6E01 /* KBTestAnimationViewController.h */,
+				9099A5891CCA24EC00BB6E01 /* KBTestAnimationViewController.m */,
 				9009BC341CCA008E0033EBEB /* Assets.xcassets */,
 				9009BC361CCA008E0033EBEB /* LaunchScreen.storyboard */,
 				9009BC391CCA008E0033EBEB /* Info.plist */,
@@ -77,6 +83,15 @@
 				9009BC291CCA008E0033EBEB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9009BC3F1CCA014D0033EBEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9009BC401CCA01760033EBEB /* UIView+KB_Animation.h */,
+				9009BC411CCA01760033EBEB /* UIView+KB_Animation.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +120,7 @@
 		9009BC1D1CCA008E0033EBEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KB;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "樊远东";
 				TargetAttributes = {
@@ -138,7 +154,6 @@
 			files = (
 				9009BC381CCA008E0033EBEB /* LaunchScreen.storyboard in Resources */,
 				9009BC351CCA008E0033EBEB /* Assets.xcassets in Resources */,
-				9009BC331CCA008E0033EBEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9009BC301CCA008E0033EBEB /* ViewController.m in Sources */,
+				9009BC421CCA01760033EBEB /* UIView+KB_Animation.m in Sources */,
 				9009BC2D1CCA008E0033EBEB /* AppDelegate.m in Sources */,
 				9009BC2A1CCA008E0033EBEB /* main.m in Sources */,
+				9099A58A1CCA24EC00BB6E01 /* KBTestAnimationViewController.m in Sources */,
+				9009BC451CCA02FF0033EBEB /* KBAnimationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9009BC311CCA008E0033EBEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9009BC321CCA008E0033EBEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9009BC361CCA008E0033EBEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,7 +272,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KBAnimationKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.kabda.KBAnimationKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KBAnimationKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.kabda.KBAnimationKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +313,7 @@
 				9009BC3E1CCA008E0033EBEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
