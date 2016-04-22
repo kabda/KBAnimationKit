@@ -13,6 +13,10 @@
  */
 @interface KBAnimationEngineItem : NSObject
 @property (nonatomic, weak) UIView *target;
+@property (nonatomic, assign) NSTimeInterval currentTime;
+@property (nonatomic, strong) NSValue *fromValue;
+@property (nonatomic, strong) NSValue *toValue;
+@property (nonatomic, assign) NSTimeInterval duration;
 @end
 
 /**
@@ -21,6 +25,8 @@
 @interface KBAnimationEngine : NSObject
 @property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, strong) NSMutableArray *animationViews;
+
++ (void)addAnimation:(KBAnimationEngineItem *)animationEngineItem;
 
 @end
 
@@ -32,7 +38,9 @@
 
 - (void)makeAnimation:(id<KBAnimationProtocol>)animation
            completion:(void (^)(BOOL))completion {
-    
+
+    KBAnimationEngineItem *item = nil;
+    [KBAnimationEngine addAnimation:item];
 }
 
 @end
@@ -60,6 +68,49 @@
     return _sharedObject;
 }
 
++ (void)addAnimation:(KBAnimationEngineItem *)animationEngineItem {
+    
+}
+
+//函数的四个参数分别代表：
+//t--- current time（当前时间）；
+//b--- beginning value（初始值）；
+//c--- change in value（变化量）；
+//d---duration（持续时间）
+//运算的结果就是当前的运动路程。
+
+
+- (CGPoint)makeTransformWithCurrentTime:(NSTimeInterval)currentTime
+                              fromPoint:(CGPoint)fromPoint
+                                toPoint:(CGPoint)toPoint
+                               duration:(NSTimeInterval)duration {
+
+    return CGPointZero;
+}
+
+- (CGFloat)makeRotationWithCurrentTime:(NSTimeInterval)currentTime
+                             fromFrame:(CGFloat)fromAngle
+                               toFrame:(CGFloat)toAngle
+                              duration:(NSTimeInterval)duration {
+
+    return 0.0;
+}
+
+- (CGRect)makeScaleWithCurrentTime:(NSTimeInterval)currentTime
+                         fromFrame:(CGRect)fromFrame
+                           toFrame:(CGRect)toFrame
+                          duration:(NSTimeInterval)duration {
+
+    return CGRectZero;
+}
+
+- (CGFloat)makeFadeWithCurrentTime:(NSTimeInterval)currentTime
+                         fromAlpha:(CGRect)fromAlpha
+                           toAlpha:(CGRect)toAlpha
+                          duration:(NSTimeInterval)duration {
+
+    return 0.0;
+}
 
 @end
 

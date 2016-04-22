@@ -44,8 +44,8 @@ typedef void(^KBAnimationCompletion)(BOOL finished);
 
 @protocol KBTransformAnimationProtocol <KBAnimationProtocol>
 @required
-@property (nonatomic, assign) CGPoint fromCenterPoint;
-@property (nonatomic, assign) CGPoint toCenterPoint;
+@property (nonatomic, assign) CGPoint fromPoint;
+@property (nonatomic, assign) CGPoint toPoint;
 @end
 
 @protocol KBRotationAnimationProtocol <KBAnimationProtocol>
